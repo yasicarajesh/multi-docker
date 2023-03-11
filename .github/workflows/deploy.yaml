@@ -25,7 +25,6 @@ jobs:
 
       - name: Generate deployment package
         run: zip -r deploy.zip . -x '*.git*'
-
 #      - name: Deploy to EB
 #        uses: einaregilsson/beanstalk-deploy@v18
 #        with:
@@ -37,3 +36,4 @@ jobs:
 #          region: us-east-1
 #          version_label: ${{ github.sha }}
 #          deployment_package: deploy.zip
+
